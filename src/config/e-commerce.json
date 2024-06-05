@@ -1,0 +1,20 @@
+[
+  {
+    "textCard": "Organizacion y filtrado en un e-commerce",
+    "textCard2": "Una característica clave de un e-commerce es su capacidad para mostrar una amplia gama de productos o servicios. Los usuarios pueden ver descripciones detalladas, imágenes y precios, lo que les ayuda a tomar decisiones informadas. Además, las plataformas e-commerce suelen ofrecer funciones de búsqueda y filtrado para que los clientes encuentren fácilmente lo que buscan",
+    "row": false,
+    "image": "/src/images/e-commerce.png"
+  },
+  {
+    "textCard": "Seguridad para el cliente a la hora de realizar transacciones en tu e-commerce",
+    "textCard2": "La seguridad es fundamental en un e-commerce. Las plataformas deben garantizar transacciones seguras mediante el uso de certificados SSL y otros métodos de encriptación para proteger la información del cliente. También suelen ofrecer múltiples opciones de pago, como tarjetas de crédito, PayPal y otros métodos electrónicos, para brindar comodidad y flexibilidad a los usuarios.",
+    "row": true,
+    "image": "/src/images/seguridad-pago.png"
+  },
+  {
+    "textCard": "Seguimiento y analisis del usuario",
+    "textCard2": "El seguimiento y análisis son esenciales para mejorar un e-commerce. Herramientas como Google Analytics y Hotjar recopilan datos sobre el comportamiento de los usuarios y las conversiones. Monitorear KPIs como la tasa de conversión y el abandono del carrito ayuda a identificar áreas de mejora. El análisis del embudo de conversión y la segmentación de usuarios muestra cómo navegan los visitantes y dónde se encuentran dificultades. Las pruebas A/B determinan qué versiones del sitio funcionan mejor. Recoger feedback directo y analizar comentarios permite ajustar productos y presentaciones. Implementar estas estrategias optimiza la experiencia del usuario y aumenta las tasas de conversión.",
+    "row": false,
+    "image": "/src/images/portfolio.png"
+  }
+]

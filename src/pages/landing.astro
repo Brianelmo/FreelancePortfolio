@@ -3,33 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Contact from "../components/Contact";
 import CardSection from "../components/CardSection";
 import PageInfo from "../components/PageInfo.astro";
-
-const data = [
-  {
-    textCard:
-      "Diseño limpio y profesional: Un diseño que sea visualmente atractivo pero no sobrecargado. Debe ser fácil de navegar, con una estructura clara que guíe al visitante de manera intuitiva.",
-    textCard2:
-      "Adaptabilidad a dispositivos móviles: Asegúrate de que la landing page se vea y funcione bien en todos los dispositivos, incluidos teléfonos móviles y tabletas.",
-    row: false,
-    image: "/src/images/mobile.png",
-  },
-  {
-    textCard:
-      "Titular llamativo: Este es el primer texto que los visitantes ven y debe captar su atención de inmediato. Debe ser breve y comunicar claramente el propósito o el valor del sitio web. Por ejemplo, si tu sitio es sobre diseño gráfico, un titular efectivo podría ser 'Transforma tus ideas en arte con nuestros diseños personalizados.'",
-    textCard2:
-      "Subtítulos informativos: Ayudan a expandir el mensaje del titular, proporcionando un poco más de información y detalles, sin abrumar al visitante.",
-    row: true,
-    image: "/src/images/landing.png",
-  },
-  {
-    textCard:
-      "Botones visibles y atractivos: Los CTAs deben destacar visualmente y estar colocados estratégicamente a lo largo de la página para guiar a los visitantes hacia la acción deseada, como 'Registrarse', 'Comprar ahora' o 'Solicitar una demo'.",
-    textCard2:
-      "Mensajes persuasivos: El texto de los botones debe ser claro y persuasivo, motivando al usuario a actuar. Por ejemplo, 'Empieza tu prueba gratuita' o 'Descubre más'.",
-    row: false,
-    image: "/src/images/portfolio.png",
-  },
-];
+import landing from "../config/landing.json"
 ---
 
 <Layout title="Landing Pages">
@@ -38,6 +12,6 @@ const data = [
     title="LandingPage"
     textHeader="Una 'landing page' o 'página de aterrizaje' es una página web diseñada específicamente para recibir y captar la atención de los visitantes cuando llegan por primera vez a un sitio web. Imagina que es como la entrada principal de una tienda: su propósito es dar una excelente primera impresión, mostrar lo más importante y guiar a los visitantes a explorar más."
   />
-  <CardSection data={data} />
+  <CardSection data={landing} />
   <Contact />
 </Layout>

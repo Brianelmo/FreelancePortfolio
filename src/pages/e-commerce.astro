@@ -3,33 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import CardSection from "../components/CardSection";
 import PageInfo from "../components/PageInfo.astro";
 import Contact from "../components/Contact";
+import ecommerce from "../config/e-commerce.json" 
 
-const data = [
-  {
-    textCard:
-      "Organizacion y filtrado en un e-commerce",
-    textCard2:
-      "Una característica clave de un e-commerce es su capacidad para mostrar una amplia gama de productos o servicios. Los usuarios pueden ver descripciones detalladas, imágenes y precios, lo que les ayuda a tomar decisiones informadas. Además, las plataformas e-commerce suelen ofrecer funciones de búsqueda y filtrado para que los clientes encuentren fácilmente lo que buscan",
-    row: false,
-    image: "/src/images/e-commerce.png",
-  },
-  {
-    textCard:
-      "Seguridad para el cliente a la hora de realizar transacciones en tu e-commerce",
-    textCard2:
-      "La seguridad es fundamental en un e-commerce. Las plataformas deben garantizar transacciones seguras mediante el uso de certificados SSL y otros métodos de encriptación para proteger la información del cliente. También suelen ofrecer múltiples opciones de pago, como tarjetas de crédito, PayPal y otros métodos electrónicos, para brindar comodidad y flexibilidad a los usuarios.",
-    row: true,
-    image: "images/seguridad-pago.png",
-  },
-  {
-    textCard:
-      "Seguimiento y analisis del usuario",
-    textCard2:
-      "El seguimiento y análisis son esenciales para mejorar un e-commerce. Herramientas como Google Analytics y Hotjar recopilan datos sobre el comportamiento de los usuarios y las conversiones. Monitorear KPIs como la tasa de conversión y el abandono del carrito ayuda a identificar áreas de mejora. El análisis del embudo de conversión y la segmentación de usuarios muestra cómo navegan los visitantes y dónde se encuentran dificultades. Las pruebas A/B determinan qué versiones del sitio funcionan mejor. Recoger feedback directo y analizar comentarios permite ajustar productos y presentaciones. Implementar estas estrategias optimiza la experiencia del usuario y aumenta las tasas de conversión.",
-    row: false,
-    image: "/src/images/portfolio.png",
-  },
-];
 ---
 
 <Layout title="E-commerce">
@@ -38,7 +13,7 @@ const data = [
     title="E-commerce"
     textHeader="Un e-commerce es una plataforma en línea donde se compran y venden productos o servicios. Este tipo de sitio web permite a los usuarios navegar por una variedad de productos, agregar artículos a un carrito de compras y realizar transacciones financieras de manera segura."
   />
-  <CardSection data={data} />
+  <CardSection data={ecommerce} />
   <Contact />
 </Layout>
 
