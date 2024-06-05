@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import HeaderTitle from "../components/HeaderTitle.astro";
+import List from "../components/List.astro";
+import Button from "../components/Button.astro";
+import CardServices from "../components/CardServices.astro";
+import Contact from "../components/Contact.jsx";
+---
+
+<Layout title="Brian Elmo">
+  <nav class="fixed z-20 m-auto h-[4rem] w-full bg-transparent">
+    <Nav />
+  </nav>
+  <div class="absolute z-10 m-auto left-0 top-96 bottom-0 right-0">
+    <HeaderTitle />
+  </div>
+  <header
+    id="home"
+    class="flex flex-col items-center h-[100vh] -z-10 blur-[2px]"
+  >
+    <video
+      autoplay
+      loop
+      muted
+      class="object-cover w-full h-full"
+      src="/src/images/PARTÍCULAS FLOTANDO EN BUCLE [PARA FONDOS DE VÍDEOS,INTROS,EDITS,ETC]..mp4"
+    ></video>
+  </header>
+
+  <section id="about" class="bg-[#161b22] py-10 h-min-[600px]">
+    <h2
+      class="text-center text-cyan text-4xl font-semibold pt-10 border-b-2 flex justify-center m-auto max-w-[300px] pb-2 md:text-5xl"
+    >
+      About Me
+    </h2>
+    <div
+      class="flex flex-col gap-20 pt-10 pb-10 md:flex-row md:justify-evenly md:items-center"
+    >
+      <div
+        class="text-white flex flex-col items-center px-10 gap-4 md:max-w-[40rem]"
+      >
+        <h3 class="text-2xl text-center">
+          I'm <span class="text-cyan">Brian Elmo, a Front-End Developer</span>
+        </h3>
+        <p class="text-center">
+          I am <span class="text-cyan">Brian Elmo</span>, I am 20 years old. I
+          am a developer who is starting his career as a Front-End Developer,
+          enthusiastic about technology and learning. I have academic experience
+          and personal projects that demonstrate the knowledge I have acquired
+          throughout my programming learning. I am looking to grow as a
+          programmer and face projects that put my knowledge to the test and
+          exploit my level as a web programmer to the fullest.
+        </p>
+      </div>
+      <div class="px-10 flex flex-col gap-4">
+        <List title="Brian Elmo" color="white" sectitle="Name:" />
+        <List title="brianelmo14@gmail.com" color="cyan" sectitle="Email:" />
+        <List title="20" sectitle="Age:" color="white" />
+        <List title="Buenos Aires, Argentina" color="cyan" sectitle="From:" />
+
+        <Button name="Contact Me" color="black" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-10">
+    <h2
+      class="text-center text-4xl text-cyan font-bold border-b-2 pt-10 flex justify-center m-auto max-w-[300px] pb-2 md:text-5xl"
+    >
+      My Services
+    </h2>
+
+    <div
+      class="p-5 mt-10 flex flex-col items-center justify-between gap-4 md:flex-row md:justify-evenly"
+    >
+      <CardServices
+        title="Landing Page"
+        text="Standard page development"
+        img="/src/images/landingpage.jpg"
+        link="landing"
+      />
+
+      <CardServices
+        title="E-Commerce"
+        text="Virtual Store Development"
+        img="/src/images/Diseño sin título.jpg"
+        link="e-commerce"
+      />
+
+      <CardServices
+        title="0ptimization"
+        text="Maintenance for your website"
+        img="/src/images/opt.jpg"
+        link="optimization"
+      />
+    </div>
+  </section>
+
+  <section id="contact" class="flex flex-col gap-10 bg-[#161b22] py-10">
+    <Contact />
+  </section>
+</Layout>
+

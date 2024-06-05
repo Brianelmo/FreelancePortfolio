@@ -1,0 +1,11 @@
+
+---
+interface Props{
+    title:string;
+    href:string;
+}
+
+const {title, href} = Astro.props
+---
+
+<a class="text-[0.9rem] text-white hover:text-[#2acfcf] transition-all lg:text-base" href={href}>{title}</a>

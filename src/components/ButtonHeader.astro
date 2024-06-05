@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  color: string;
+  widht:string
+}
+
+const { name, color, widht } = Astro.props;
+---
+
+<a
+  class=`text-${color} bg-[#2acfcf] flex w-[${widht}px] justify-center  py-2 font-bold rounded-md hover:opacity-60 transition-all shadow-xl` href="#footer"
+ >
+  {name}
+</a>

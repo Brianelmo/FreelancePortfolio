@@ -1,0 +1,13 @@
+---
+interface Props{
+    color:string;
+    title:string;
+    sectitle:string
+}
+
+const {color , title, sectitle} = Astro.props
+---
+
+<ul>
+    <li class=`text-${color} md:text-lg`><span class="text-white">{sectitle}</span> {title}</li>
+</ul>

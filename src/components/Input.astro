@@ -1,0 +1,12 @@
+---
+interface Props{
+    InpName:string
+    placeHolder:string
+    id:string
+
+}
+
+const {InpName, placeHolder, id} = Astro.props
+--- 
+
+<input id={id} class="bg-[] py-1 px-2 outline-none text-gray-700 rounded-lg border border-gray-700" type='text' name={InpName} placeholder={placeHolder}>

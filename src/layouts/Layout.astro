@@ -1,0 +1,65 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Contact from '../components/Contact';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="/src/images/2.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+		
+</script>
+<script type="text/javascript">
+	(function(){
+	   emailjs.init("Ate_yN8Mu5KBbgGVW");
+	})();
+ </script>
+	</head>
+	<body class="font-worksans scroll-smooth">
+		<slot />
+		<script src="https://kit.fontawesome.com/d57c20a4c3.js" crossorigin="anonymous"></script>
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		background: #0a0e14;
+		background-size: 224px;
+		scroll-behavior: smooth; 
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

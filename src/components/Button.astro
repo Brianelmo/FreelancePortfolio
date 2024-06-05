@@ -1,0 +1,12 @@
+---
+interface Props{
+    name:string,
+    color:string
+}
+
+const {name,color} = Astro.props
+--- 
+
+<button class=`text-${color} bg-[#2acfcf] flex w-40 justify-center items-center py-2 font-bold rounded-md hover:opacity-60 transition-all`>
+    {name}
+</button>
