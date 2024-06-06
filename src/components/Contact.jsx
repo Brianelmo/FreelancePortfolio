@@ -49,7 +49,7 @@ function Contact() {
         </button>
       </form> 
       <div className="flex flex-col gap-10 px-10">
-        <img className="w-[150px] rounded-full" src="/src/images/2.png" alt="" /> 
+        <img className="w-[150px] rounded-full" src="../2.png" alt="" /> 
         <div className="flex flex-col gap-2">
           <h2 className="text-white text-4xl font-bold">Redes</h2> 
           <ul className="flex flex-col gap-2">

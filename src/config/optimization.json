@@ -3,18 +3,18 @@
     "textCard": "Velocidad de carga: Mejorar la velocidad de carga para otorgar la informacion lo mas rapido posible al usuario final.",
     "textCard2": "Aumentar la velocidad de carga es fundamental. Esto se logra reduciendo el tamaño de archivos CSS, JavaScript e imágenes para que se descarguen más rápido. Además, el almacenamiento en caché guarda una versión de la página en el navegador, acelerando el tiempo de carga en visitas futuras. Implementar redes de entrega de contenido (CDN) distribuye el contenido en servidores globales, asegurando una entrega rápida de datos sin importar la ubicación del usuario.",
     "row": false,
-    "image": "/src/images/velocidad-opt.png"
+    "image": "../velocidad-opt.png"
   },
   {
     "textCard": "SEO (Optimización para motores de búsqueda)",
     "textCard2": "Mejorar el SEO, o la optimización para motores de búsqueda, es otro aspecto crucial. Utilizar palabras clave relevantes en los títulos, descripciones y contenido ayuda a los motores de búsqueda a entender de qué trata cada página. Incluir etiquetas meta y descripciones detalladas es esencial para mejorar la visibilidad y el ranking en los resultados de búsqueda. Además, crear enlaces internos y externos mejora la autoridad del sitio y facilita la navegación, beneficiando tanto a los usuarios como a los motores de búsqueda.",
     "row": true,
-    "image": "/src/images/seo-opt.png"
+    "image": "../seo-opt.png"
   },
   {
     "textCard": "Monitoreo y análisis del comportamiento de la pagina y de los visitantes",
     "textCard2": "el monitoreo y análisis continuos son esenciales para una optimización efectiva. Utilizar herramientas de análisis web como Google Analytics permite comprender el comportamiento de los usuarios y detectar áreas que necesitan mejora. Realizar pruebas A/B, que comparan diferentes versiones de una página, ayuda a identificar cuál funciona mejor en términos de conversión y experiencia del usuario.",
     "row": false,
-    "image": "/src/images/se-graph.png"
+    "image": "../se-graph.png"
   }
 ]
