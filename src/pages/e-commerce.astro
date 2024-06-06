@@ -4,10 +4,14 @@ import CardSection from "../components/CardSection";
 import PageInfo from "../components/PageInfo.astro";
 import Contact from "../components/Contact";
 import ecommerce from "../config/e-commerce.json" 
+import NavPages from "../components/NavPages.astro";
 
 ---
 
 <Layout title="E-commerce" icon="../2.png">
+  
+    <NavPages/>
+
   <PageInfo
     img="../e-commerce.jpg"
     title="E-commerce"
